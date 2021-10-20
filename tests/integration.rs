@@ -10,6 +10,10 @@ use {
     solana_validator::test_validator::*,
 };
 
+fn program_test() -> ProgramTest {
+    ProgramTest::new("escrow", id(), processor!(processor::process_instruction))
+}
+
 #[test]
 fn test_validator_transaction() {
     let program_id = Pubkey::new_unique();

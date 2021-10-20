@@ -1,0 +1,21 @@
+{
+  "name": "minti-rust-solana",
+  "version": "1.0.0",
+  "type": "module",
+  "repository": "git@github.com:acuarica/minti-rust-solana.git",
+  "author": "Luis Mastrangelo <Luis_Mastrangelo@epam.com>",
+  "license": "MIT",
+  "scripts": {
+    "setup": "node scripts/setup.js",
+    "alice": "node scripts/alice.js",
+    "bob": "node scripts/bob.js"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.7.0",
+    "@solana/spl-token": "^0.1.8",
+    "bn.js": "^5.2.0",
+    "borsh": "^0.6.0",
+    "mz": "^2.7.0",
+    "yaml": "^1.10.2"
+  }
+}
